@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0"
+  },
   "dependencies": {
     "@types/node": "20.1.7",
     "@types/react": "18.2.6",
