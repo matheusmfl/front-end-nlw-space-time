@@ -10,12 +10,12 @@ const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 const baiJamjuree = BaiJamjuree({
   subsets: ['latin'],
   weight: '700',
-  variable: '--font-bai-jam-juree',
+  variable: '--font-bai-jamjuree',
 })
 
 export const metadata = {
   title: 'Capsula Do Tempo',
-  description: 'Um capsula do Tempo construida com React NEXTJS ',
+  description: 'Um capsula do Tempo construída com React NEXTJS ',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

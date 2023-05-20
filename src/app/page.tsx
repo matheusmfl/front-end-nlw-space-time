@@ -37,15 +37,31 @@ export default function Home() {
             <h1 className="mt-5 text-4xl font-bold leading-tight text-gray-50">
               Sua capsula do tempo
             </h1>
-            <p>
+            <p className="mt-1 text-lg leading-relaxed">
               Colecione momentos marcantes da sua jornada e compartilhe (se
               quiser) com o mundo!
             </p>
-
-            <a href="" className="block uppercase pt-5">
-              Cadastrar lembranças
-            </a>
           </div>
+          <a
+            href=""
+            className="inline-block uppercase rounded-full 
+            bg-green-500 px-5 py-3 font-alt text-sm leading-none text-black hover:bg-green-600"
+          >
+            Cadastrar lembranças
+          </a>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-sm leading-relaxed text-gray-200">
+          Feito com 💟 por{' '}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://paniaguacorretora.com"
+            className="underline hover:text-gray-100"
+          >
+            Matheus Fonteles
+          </a>
         </div>
       </div>
       {/* Right */}
