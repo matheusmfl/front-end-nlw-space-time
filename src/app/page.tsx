@@ -1,9 +1,14 @@
+import { cookies } from 'next/headers'
+
 import { Copyright } from './components/Copyright'
 import { SignIn } from './components/SignIn'
 import { Hero } from './components/Hero'
 import { EmptyMemories } from './components/EmptyMemories'
+import { Profile } from './components/Profile'
 
 export default function Home() {
+  // esse método HAS retorna true ou false, se tiver um cookie chamado TOKEN, ele retora TRUE
+  const isAuthenticate = cookies().has('token')
   return (
     <main className="bg-[url(../assets/bg-stars.svg)] bg-cover grid grid-cols-2 min-h-screen">
       {/* Left */}
@@ -17,7 +22,7 @@ export default function Home() {
         <div className="absolute right-2  top-0 bottom-0 w-2 bg-stripes" />
 
         {/* Sign In */}
-        <SignIn />
+        {isAuthenticate ? <Profile /> : <SignIn />}
 
         {/* Hero */}
         <Hero />
