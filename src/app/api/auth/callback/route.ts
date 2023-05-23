@@ -11,8 +11,6 @@ export async function GET(req: NextRequest) {
 
   const { token } = registerResponse.data
 
-  console.log(token)
-
   const redirectUrl = new URL('/', req.url)
 
   // Redirecionamos, passando o COOKIE, o PATH do objeto de configuração, indica
