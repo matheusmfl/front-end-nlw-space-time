@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '../../assets/logo.svg'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -15,13 +16,13 @@ export function Hero() {
           com o mundo!
         </p>
       </div>
-      <a
-        href=""
+      <Link
+        href="/memories/new"
         className="inline-block uppercase rounded-full 
     bg-green-500 px-5 py-3 font-alt text-sm leading-none text-black hover:bg-green-600"
       >
         Cadastrar lembranças
-      </a>
+      </Link>
     </div>
   )
 }
